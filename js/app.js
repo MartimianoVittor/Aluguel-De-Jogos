@@ -1,5 +1,5 @@
 function botaoClick(id) {
-    alugados = verificarAlugados(id);
+    alugados = verificarAlugados();
     let game = document.getElementById(`game-${id}`);
     let imagem = game.querySelector('.dashboard__item__img');
     let botao = game.querySelector('.dashboard__item__button');
@@ -15,7 +15,7 @@ function botaoClick(id) {
     }   
 }
 
-function verificarAlugados(id){
+function verificarAlugados(){
     let alugados =[];
     for(let i=1; i<=3; i++){
         point = document.getElementById(`game-${i}`);
